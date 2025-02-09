@@ -1,0 +1,344 @@
+
+### result
+```
+1 ?- ids(3, Plan).
+Trying depth: 0
+Trying depth: 1
+Current state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Visited: [[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,b,c)
+Next state: [clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)]
+Action taken: move(c,d,a)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)]
+Action taken: move_onto_table(a,b)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_table(c,d)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Trying depth: 2
+Current state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Visited: [[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,b,c)
+Next state: [clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)]
+Current state: [clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)]
+Visited: [[clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,c,b)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_table(a,c)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(b,a)
+Next state: [clear(b),on(a,c),on(b,a),on(c,d),on(d,t)]
+Action taken: move(c,d,a)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)]
+Current state: [clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)]
+Visited: [[clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(c,a,d)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_table(c,a)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(d,c)
+Next state: [clear(d),on(a,b),on(b,t),on(c,a),on(d,c)]
+Action taken: move_onto_table(a,b)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Current state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Visited: [[clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(c,d,a)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,a),on(d,t)]
+Action taken: move(c,d,b)
+Next state: [clear(a),clear(c),clear(d),on(a,t),on(b,t),on(c,b),on(d,t)]
+Action taken: move_onto_table(c,d)
+Next state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(a,b)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(a,c)
+Next state: [clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(b,a)
+Next state: [clear(b),clear(c),on(a,t),on(b,a),on(c,d),on(d,t)]
+Action taken: move_onto_block(b,c)
+Next state: [clear(a),clear(b),on(a,t),on(b,c),on(c,d),on(d,t)]
+Action taken: move_onto_table(c,d)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Current state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Visited: [[clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,b,c)
+Next state: [clear(a),clear(b),clear(d),on(a,c),on(b,t),on(c,t),on(d,t)]
+Action taken: move(a,b,d)
+Next state: [clear(a),clear(b),clear(c),on(a,d),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_table(a,b)
+Next state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(c,a)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)]
+Action taken: move_onto_block(c,d)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(d,a)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,a)]
+Action taken: move_onto_block(d,c)
+Next state: [clear(a),clear(d),on(a,b),on(b,t),on(c,t),on(d,c)]
+Trying depth: 3
+Current state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Visited: [[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,b,c)
+Next state: [clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)]
+Current state: [clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)]
+Visited: [[clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,c,b)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_table(a,c)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Current state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Visited: [[clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)],[clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(c,d,a)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,a),on(d,t)]
+Action taken: move(c,d,b)
+Next state: [clear(a),clear(c),clear(d),on(a,t),on(b,t),on(c,b),on(d,t)]
+Action taken: move_onto_table(c,d)
+Next state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(a,b)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(a,c)
+Next state: [clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(b,a)
+Next state: [clear(b),clear(c),on(a,t),on(b,a),on(c,d),on(d,t)]
+Action taken: move_onto_block(b,c)
+Next state: [clear(a),clear(b),on(a,t),on(b,c),on(c,d),on(d,t)]
+Action taken: move_onto_block(b,a)
+Next state: [clear(b),on(a,c),on(b,a),on(c,d),on(d,t)]
+Current state: [clear(b),on(a,c),on(b,a),on(c,d),on(d,t)]
+Visited: [[clear(b),on(a,c),on(b,a),on(c,d),on(d,t)],[clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move_onto_table(b,a)
+Next state: [clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)]
+Action taken: move(c,d,a)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)]
+Current state: [clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)]
+Visited: [[clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(c,a,d)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_table(c,a)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Current state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Visited: [[clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)],[clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,b,c)
+Next state: [clear(a),clear(b),clear(d),on(a,c),on(b,t),on(c,t),on(d,t)]
+Action taken: move(a,b,d)
+Next state: [clear(a),clear(b),clear(c),on(a,d),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_table(a,b)
+Next state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(c,a)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)]
+Action taken: move_onto_block(c,d)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(d,a)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,a)]
+Action taken: move_onto_block(d,c)
+Next state: [clear(a),clear(d),on(a,b),on(b,t),on(c,t),on(d,c)]
+Action taken: move_onto_block(d,c)
+Next state: [clear(d),on(a,b),on(b,t),on(c,a),on(d,c)]
+Current state: [clear(d),on(a,b),on(b,t),on(c,a),on(d,c)]
+Visited: [[clear(d),on(a,b),on(b,t),on(c,a),on(d,c)],[clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move_onto_table(d,c)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)]
+Action taken: move_onto_table(a,b)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Current state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Visited: [[clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(c,d,a)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,a),on(d,t)]
+Current state: [clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,a),on(d,t)]
+Visited: [[clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,a),on(d,t)],[clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(c,a,b)
+Next state: [clear(a),clear(c),clear(d),on(a,t),on(b,t),on(c,b),on(d,t)]
+Action taken: move(c,a,d)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_table(c,a)
+Next state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,c)
+Next state: [clear(b),clear(d),on(a,t),on(b,c),on(c,a),on(d,t)]
+Action taken: move_onto_block(b,d)
+Next state: [clear(b),clear(c),on(a,t),on(b,d),on(c,a),on(d,t)]
+Action taken: move_onto_block(d,b)
+Next state: [clear(c),clear(d),on(a,t),on(b,t),on(c,a),on(d,b)]
+Action taken: move_onto_block(d,c)
+Next state: [clear(b),clear(d),on(a,t),on(b,t),on(c,a),on(d,c)]
+Action taken: move(c,d,b)
+Next state: [clear(a),clear(c),clear(d),on(a,t),on(b,t),on(c,b),on(d,t)]
+Current state: [clear(a),clear(c),clear(d),on(a,t),on(b,t),on(c,b),on(d,t)]
+Visited: [[clear(a),clear(c),clear(d),on(a,t),on(b,t),on(c,b),on(d,t)],[clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(c,b,a)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,a),on(d,t)]
+Action taken: move(c,b,d)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_table(c,b)
+Next state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(a,c)
+Next state: [clear(a),clear(d),on(a,c),on(b,t),on(c,b),on(d,t)]
+Action taken: move_onto_block(a,d)
+Next state: [clear(a),clear(c),on(a,d),on(b,t),on(c,b),on(d,t)]
+Action taken: move_onto_block(d,a)
+Next state: [clear(c),clear(d),on(a,t),on(b,t),on(c,b),on(d,a)]
+Action taken: move_onto_block(d,c)
+Next state: [clear(a),clear(d),on(a,t),on(b,t),on(c,b),on(d,c)]
+Action taken: move_onto_table(c,d)
+Next state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Current state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Visited: [[clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)],[clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move_onto_block(a,b)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(a,c)
+Next state: [clear(a),clear(b),clear(d),on(a,c),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(a,d)
+Next state: [clear(a),clear(b),clear(c),on(a,d),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,a)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,a),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,c)
+Next state: [clear(a),clear(b),clear(d),on(a,t),on(b,c),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,d)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,d),on(c,t),on(d,t)]
+Action taken: move_onto_block(c,a)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,a),on(d,t)]
+Action taken: move_onto_block(c,b)
+Next state: [clear(a),clear(c),clear(d),on(a,t),on(b,t),on(c,b),on(d,t)]
+Action taken: move_onto_block(c,d)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(d,a)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,a)]
+Action taken: move_onto_block(d,b)
+Next state: [clear(a),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,b)]
+Action taken: move_onto_block(d,c)
+Next state: [clear(a),clear(b),clear(d),on(a,t),on(b,t),on(c,t),on(d,c)]
+Action taken: move_onto_block(a,b)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(a,c)
+Next state: [clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)]
+Current state: [clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)]
+Visited: [[clear(a),clear(b),on(a,c),on(b,t),on(c,d),on(d,t)],[clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,c,b)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_table(a,c)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(b,a)
+Next state: [clear(b),on(a,c),on(b,a),on(c,d),on(d,t)]
+Action taken: move_onto_block(b,a)
+Next state: [clear(b),clear(c),on(a,t),on(b,a),on(c,d),on(d,t)]
+Current state: [clear(b),clear(c),on(a,t),on(b,a),on(c,d),on(d,t)]
+Visited: [[clear(b),clear(c),on(a,t),on(b,a),on(c,d),on(d,t)],[clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(b,a,c)
+Next state: [clear(a),clear(b),on(a,t),on(b,c),on(c,d),on(d,t)]
+Action taken: move(c,d,b)
+Next state: [clear(c),clear(d),on(a,t),on(b,a),on(c,b),on(d,t)]
+Action taken: move_onto_table(b,a)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_table(c,d)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,a),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,c)
+Next state: [clear(a),clear(b),on(a,t),on(b,c),on(c,d),on(d,t)]
+Current state: [clear(a),clear(b),on(a,t),on(b,c),on(c,d),on(d,t)]
+Visited: [[clear(a),clear(b),on(a,t),on(b,c),on(c,d),on(d,t)],[clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(b,c,a)
+Next state: [clear(b),clear(c),on(a,t),on(b,a),on(c,d),on(d,t)]
+Action taken: move_onto_table(b,c)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(a,b)
+Next state: [clear(a),on(a,b),on(b,c),on(c,d),on(d,t)]
+Action taken: move_onto_table(c,d)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Current state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Visited: [[clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,b,c)
+Next state: [clear(a),clear(b),clear(d),on(a,c),on(b,t),on(c,t),on(d,t)]
+Current state: [clear(a),clear(b),clear(d),on(a,c),on(b,t),on(c,t),on(d,t)]
+Visited: [[clear(a),clear(b),clear(d),on(a,c),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,c,b)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Action taken: move(a,c,d)
+Next state: [clear(a),clear(b),clear(c),on(a,d),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_table(a,c)
+Next state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,a)
+Next state: [clear(b),clear(d),on(a,c),on(b,a),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,d)
+Next state: [clear(a),clear(b),on(a,c),on(b,d),on(c,t),on(d,t)]
+Action taken: move_onto_block(d,a)
+Next state: [clear(b),clear(d),on(a,c),on(b,t),on(c,t),on(d,a)]
+Action taken: move_onto_block(d,b)
+Next state: [clear(a),clear(d),on(a,c),on(b,t),on(c,t),on(d,b)]
+Action taken: move(a,b,d)
+Next state: [clear(a),clear(b),clear(c),on(a,d),on(b,t),on(c,t),on(d,t)]
+Current state: [clear(a),clear(b),clear(c),on(a,d),on(b,t),on(c,t),on(d,t)]
+Visited: [[clear(a),clear(b),clear(c),on(a,d),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,d,b)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Action taken: move(a,d,c)
+Next state: [clear(a),clear(b),clear(d),on(a,c),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_table(a,d)
+Next state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,a)
+Next state: [clear(b),clear(c),on(a,d),on(b,a),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,c)
+Next state: [clear(a),clear(b),on(a,d),on(b,c),on(c,t),on(d,t)]
+Action taken: move_onto_block(c,a)
+Next state: [clear(b),clear(c),on(a,d),on(b,t),on(c,a),on(d,t)]
+Action taken: move_onto_block(c,b)
+Next state: [clear(a),clear(c),on(a,d),on(b,t),on(c,b),on(d,t)]
+Action taken: move_onto_table(a,b)
+Next state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Current state: [clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)]
+Visited: [[clear(a),clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move_onto_block(a,b)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(a,c)
+Next state: [clear(a),clear(b),clear(d),on(a,c),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(a,d)
+Next state: [clear(a),clear(b),clear(c),on(a,d),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,a)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,a),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,c)
+Next state: [clear(a),clear(b),clear(d),on(a,t),on(b,c),on(c,t),on(d,t)]
+Action taken: move_onto_block(b,d)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,d),on(c,t),on(d,t)]
+Action taken: move_onto_block(c,a)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,a),on(d,t)]
+Action taken: move_onto_block(c,b)
+Next state: [clear(a),clear(c),clear(d),on(a,t),on(b,t),on(c,b),on(d,t)]
+Action taken: move_onto_block(c,d)
+Next state: [clear(a),clear(b),clear(c),on(a,t),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(d,a)
+Next state: [clear(b),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,a)]
+Action taken: move_onto_block(d,b)
+Next state: [clear(a),clear(c),clear(d),on(a,t),on(b,t),on(c,t),on(d,b)]
+Action taken: move_onto_block(d,c)
+Next state: [clear(a),clear(b),clear(d),on(a,t),on(b,t),on(c,t),on(d,c)]
+Action taken: move_onto_block(c,a)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)]
+Current state: [clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)]
+Visited: [[clear(c),clear(d),on(a,b),on(b,t),on(c,a),on(d,t)],[clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(c,a,d)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_table(c,a)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(d,c)
+Next state: [clear(d),on(a,b),on(b,t),on(c,a),on(d,c)]
+Action taken: move_onto_block(c,d)
+Next state: [clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]
+Action taken: move_onto_block(d,a)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,a)]
+Current state: [clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,a)]
+Visited: [[clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,a)],[clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(d,a,c)
+Next state: [clear(a),clear(d),on(a,b),on(b,t),on(c,t),on(d,c)]
+Action taken: move_onto_table(d,a)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+Action taken: move_onto_block(c,d)
+Next state: [clear(c),on(a,b),on(b,t),on(c,d),on(d,a)]
+Action taken: move_onto_block(d,c)
+Next state: [clear(a),clear(d),on(a,b),on(b,t),on(c,t),on(d,c)]
+Current state: [clear(a),clear(d),on(a,b),on(b,t),on(c,t),on(d,c)]
+Visited: [[clear(a),clear(d),on(a,b),on(b,t),on(c,t),on(d,c)],[clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)],[clear(a),clear(c),on(a,b),on(b,t),on(c,d),on(d,t)]]
+Action taken: move(a,b,d)
+Next state: [clear(a),clear(b),on(a,d),on(b,t),on(c,t),on(d,c)]
+Action taken: move(d,c,a)
+Next state: [clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,a)]
+Action taken: move_onto_table(a,b)
+Next state: [clear(a),clear(b),clear(d),on(a,t),on(b,t),on(c,t),on(d,c)]
+Action taken: move_onto_table(d,c)
+Next state: [clear(a),clear(c),clear(d),on(a,b),on(b,t),on(c,t),on(d,t)]
+false.
+```
